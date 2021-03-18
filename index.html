@@ -30,5 +30,24 @@
 	}).addTo(mymap);
 
 </script>
+	
+	<div id="photosphere"></div>
+	html, body, #photosphere {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+	
+	new PhotoSphereViewer.Viewer({
+  panorama: 'https://github.com/atarom/MapingTest/blob/main/360GRIDcalibrated.jpg',
+  container: 'photosphere',
+  caption: 'FontGrogaCalibrada <b>&copy; aTarom</b>',
+  loadingImg: 'https://photo-sphere-viewer.js.org/assets/photosphere-logo.gif',
+  defaultLat: 0.3,
+  touchmoveTwoFingers: true,
+  mousewheelCtrlKey: true,
+});
+	
+	
 </body>
 </html>
